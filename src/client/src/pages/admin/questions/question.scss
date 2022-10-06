@@ -1,0 +1,23 @@
+.questions {
+    .add-question {
+        position: relative;
+        width: 100%;
+        text-align: right;
+    }
+    
+    .edit-delete {
+        display: flex;
+        img {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            &:first-child {
+                margin-right: 15px;
+            }
+            &:hover {
+                opacity: 0.6;
+                transition: ease-in-out 0.3s;
+            }
+        }
+    }
+}

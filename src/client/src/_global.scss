@@ -1,0 +1,79 @@
+.loading-content {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: black;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.toast-container{
+    &.position-fixed{
+        bottom: 5% !important;
+    }
+    .bg-danger {
+        .toast-header {
+            border: none;
+            background: #ec6464;
+        }
+    }
+    .bg-success {
+        .toast-header {
+            border: none;
+            background: #66c36b;
+        }
+    }
+    .text-muted {
+        color: white !important;
+    }
+    .toast-body {
+        background: white !important;
+    }
+}
+
+.main {
+    .content {
+        min-height: calc(100vh - 56px - 56px);
+        border: 1px solid #dddddd;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: calc(1rem + 56px);
+        box-shadow: 2px 2px 3px #dddddd;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+
+        .current-date {
+            font-style: italic;
+            color: #aaa;
+        }
+
+        .survey-title {
+            color: #686868;
+        }
+
+        .survey-information {
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+        }
+    }
+    input[type="radio"]:checked, input[type="checkbox"]:checked  {
+        border-color: black;
+        background-color: black;
+    }
+}
+
+.navbar-nav {
+    cursor: pointer;
+}
